@@ -1,6 +1,9 @@
 public class StringLab{
     public static void main(String[] args) {
-
+        System.out.println();
+        System.out.println("----Lab7 Assignment Strings----");
+        System.out.println();
+        
         String str = " Welcome to the Java String Lab! ";
 
     //Task 1
@@ -9,10 +12,11 @@ public class StringLab{
         System.out.println("Character at index 7: " + str.charAt(7));
         System.out.println("Extracted word: " + str.substring(15, 19));
         System.out.println("Uppercase: " + str.toUpperCase());
-        System.out.println("Lowercase: " + str.toLowerCase());
+        System.out.println("Lowercase: " + str.toLowercCase());
         System.out.println("Index of 'Java': " + str.indexOf("Java"));
         System.out.println("Contains 'Lab': " + str.contains("Lab"));
         System.out.println("Replaced 'Java' with 'Java Programming': " + str.replace("Java", "Java Programming"));
+        System.out.println();
 
         // split()
         /*
@@ -20,7 +24,8 @@ public class StringLab{
         * */
 
         String[] words = str.split(" ");
-        System.out.println("Words in the string:");
+        System.out.print("Words in the string:");
+        System.out.println();
 
         //start of the loop
         for (String word : words) {
